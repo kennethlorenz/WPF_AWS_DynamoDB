@@ -1,0 +1,70 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0-windows7.0": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    "net5.0-windows7.0": []
+  },
+  "packageFolders": {
+    "C:\\Users\\khenz\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\khenz\\Desktop\\Software Engineering\\Fall2021\\Api Engineering Cloud Computing\\Lab2_AWS_DynamoDB\\WPF_AWS_DynamoDB\\AWS_DynamoDB\\AWS_DynamoDB.csproj",
+      "projectName": "AWS_DynamoDB",
+      "projectPath": "C:\\Users\\khenz\\Desktop\\Software Engineering\\Fall2021\\Api Engineering Cloud Computing\\Lab2_AWS_DynamoDB\\WPF_AWS_DynamoDB\\AWS_DynamoDB\\AWS_DynamoDB.csproj",
+      "packagesPath": "C:\\Users\\khenz\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\khenz\\Desktop\\Software Engineering\\Fall2021\\Api Engineering Cloud Computing\\Lab2_AWS_DynamoDB\\WPF_AWS_DynamoDB\\AWS_DynamoDB\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\khenz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0-windows7.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://www.nuget.org/api/v2": {}
+      },
+      "frameworks": {
+        "net5.0-windows7.0": {
+          "targetAlias": "net5.0-windows",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0-windows7.0": {
+        "targetAlias": "net5.0-windows",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WPF": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

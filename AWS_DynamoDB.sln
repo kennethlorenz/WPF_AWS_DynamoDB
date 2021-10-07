@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AWS_DynamoDB", "AWS_DynamoDB.csproj", "{3553FBBE-CB1A-4393-86AC-5E7816003A9A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3553FBBE-CB1A-4393-86AC-5E7816003A9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3553FBBE-CB1A-4393-86AC-5E7816003A9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3553FBBE-CB1A-4393-86AC-5E7816003A9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3553FBBE-CB1A-4393-86AC-5E7816003A9A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E875BAE3-CE51-4AA0-9AD6-7EA62F08AF89}
+	EndGlobalSection
+EndGlobal
