@@ -6,4 +6,12 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="img\DynamoDB.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="img\DynamoDB.png" />
+  </ItemGroup>
+
 </Project>

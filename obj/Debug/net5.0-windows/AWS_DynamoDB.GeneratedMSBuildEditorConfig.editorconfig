@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = AWS_DynamoDB
-build_property.ProjectDir = C:\Users\khenz\Desktop\Software Engineering\Fall2021\Api Engineering Cloud Computing\Lab2_AWS_DynamoDB\WPF_AWS_DynamoDB\AWS_DynamoDB\
+build_property.ProjectDir = C:\Users\khenz\Desktop\Software Engineering\Fall2021\Api Engineering Cloud Computing\Lab2_AWS_DynamoDB\

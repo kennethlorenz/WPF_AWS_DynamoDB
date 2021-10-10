@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\khenz\\Desktop\\Software Engineering\\Fall2021\\Api Engineering Cloud Computing\\Lab2_AWS_DynamoDB\\WPF_AWS_DynamoDB\\AWS_DynamoDB\\AWS_DynamoDB.csproj",
+      "projectUniqueName": "C:\\Users\\khenz\\Desktop\\Software Engineering\\Fall2021\\Api Engineering Cloud Computing\\Lab2_AWS_DynamoDB\\AWS_DynamoDB.csproj",
       "projectName": "AWS_DynamoDB",
-      "projectPath": "C:\\Users\\khenz\\Desktop\\Software Engineering\\Fall2021\\Api Engineering Cloud Computing\\Lab2_AWS_DynamoDB\\WPF_AWS_DynamoDB\\AWS_DynamoDB\\AWS_DynamoDB.csproj",
+      "projectPath": "C:\\Users\\khenz\\Desktop\\Software Engineering\\Fall2021\\Api Engineering Cloud Computing\\Lab2_AWS_DynamoDB\\AWS_DynamoDB.csproj",
       "packagesPath": "C:\\Users\\khenz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\khenz\\Desktop\\Software Engineering\\Fall2021\\Api Engineering Cloud Computing\\Lab2_AWS_DynamoDB\\WPF_AWS_DynamoDB\\AWS_DynamoDB\\obj\\",
+      "outputPath": "C:\\Users\\khenz\\Desktop\\Software Engineering\\Fall2021\\Api Engineering Cloud Computing\\Lab2_AWS_DynamoDB\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\khenz\\AppData\\Roaming\\NuGet\\NuGet.Config",
