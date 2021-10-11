@@ -1,8 +1,24 @@
 {
   "version": 2,
-  "dgSpecHash": "0M0Et98e+8j0TIDwvDvyfjftUbGsUlRbhI+1Far6NhPjgvucGghfGlrf0zj1QwwOsx6lZNNng1S9orlBpobkGg==",
+  "dgSpecHash": "oSdm8CWnT4Ud46KKkktSHBv4vZqigDpu9nJD89e5/Tuk0m4asJUvJ9HqfY/tY470h0o4NQ+AqTuWXvJb+zh57g==",
   "success": true,
   "projectFilePath": "C:\\Users\\khenz\\Desktop\\Software Engineering\\Fall2021\\Api Engineering Cloud Computing\\Lab2_AWS_DynamoDB\\AWS_DynamoDB.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\khenz\\.nuget\\packages\\awssdk.core\\3.7.3.19\\awssdk.core.3.7.3.19.nupkg.sha512",
+    "C:\\Users\\khenz\\.nuget\\packages\\awssdk.dynamodbv2\\3.7.0.80\\awssdk.dynamodbv2.3.7.0.80.nupkg.sha512",
+    "C:\\Users\\khenz\\.nuget\\packages\\awssdk.s3\\3.7.3.12\\awssdk.s3.3.7.3.12.nupkg.sha512",
+    "C:\\Users\\khenz\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.0-rc.1.21451.13\\microsoft.extensions.configuration.6.0.0-rc.1.21451.13.nupkg.sha512",
+    "C:\\Users\\khenz\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0-rc.1.21451.13\\microsoft.extensions.configuration.abstractions.6.0.0-rc.1.21451.13.nupkg.sha512",
+    "C:\\Users\\khenz\\.nuget\\packages\\microsoft.extensions.configuration.binder\\6.0.0-rc.1.21451.13\\microsoft.extensions.configuration.binder.6.0.0-rc.1.21451.13.nupkg.sha512",
+    "C:\\Users\\khenz\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\6.0.0-rc.1.21451.13\\microsoft.extensions.configuration.fileextensions.6.0.0-rc.1.21451.13.nupkg.sha512",
+    "C:\\Users\\khenz\\.nuget\\packages\\microsoft.extensions.configuration.json\\6.0.0-rc.1.21451.13\\microsoft.extensions.configuration.json.6.0.0-rc.1.21451.13.nupkg.sha512",
+    "C:\\Users\\khenz\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\6.0.0-rc.1.21451.13\\microsoft.extensions.fileproviders.abstractions.6.0.0-rc.1.21451.13.nupkg.sha512",
+    "C:\\Users\\khenz\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\6.0.0-rc.1.21451.13\\microsoft.extensions.fileproviders.physical.6.0.0-rc.1.21451.13.nupkg.sha512",
+    "C:\\Users\\khenz\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\6.0.0-rc.1.21451.13\\microsoft.extensions.filesystemglobbing.6.0.0-rc.1.21451.13.nupkg.sha512",
+    "C:\\Users\\khenz\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0-rc.1.21451.13\\microsoft.extensions.primitives.6.0.0-rc.1.21451.13.nupkg.sha512",
+    "C:\\Users\\khenz\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0-rc.1.21451.13\\system.runtime.compilerservices.unsafe.6.0.0-rc.1.21451.13.nupkg.sha512",
+    "C:\\Users\\khenz\\.nuget\\packages\\system.text.encodings.web\\6.0.0-rc.1.21451.13\\system.text.encodings.web.6.0.0-rc.1.21451.13.nupkg.sha512",
+    "C:\\Users\\khenz\\.nuget\\packages\\system.text.json\\6.0.0-rc.1.21451.13\\system.text.json.6.0.0-rc.1.21451.13.nupkg.sha512"
+  ],
   "logs": []
 }
