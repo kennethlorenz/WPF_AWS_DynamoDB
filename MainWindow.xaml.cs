@@ -20,12 +20,37 @@ namespace AWS_DynamoDB
     /// </summary>
     public partial class MainWindow : Window
     {
+        DDBOperation ddb = new DDBOperation();
+
+
         public MainWindow()
         {
             InitializeComponent();
-            DDBOperation ddb = new DDBOperation();
             //ddb.CreateTable();
-            ddb.InsertLoginCredentials();
+            //ddb.InsertLoginCredentials();
+        }
+
+        private void btnLogin_Click(object sender, RoutedEventArgs e)
+        {
+            GetUser();
+        }
+
+        private async void GetUser()
+        {
+            string email = txtBxEmail.Text;
+            string password = pwBxPassword.Password.ToString();
+            await ddb.GetUser(email, password);
+
+            if (ddb.userExists == true)
+            {
+                this.Hide();
+                EbookReader window = new EbookReader(email);
+                window.Show();
+            }
+            else
+            {
+                lblValidation.Content = "Invalid Email / Password.";
+            }
         }
     }
 }

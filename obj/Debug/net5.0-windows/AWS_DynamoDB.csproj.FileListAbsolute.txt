@@ -47,3 +47,5 @@ C:\Users\khenz\Desktop\Software Engineering\Fall2021\Api Engineering Cloud Compu
 C:\Users\khenz\Desktop\Software Engineering\Fall2021\Api Engineering Cloud Computing\Lab2_AWS_DynamoDB\bin\Debug\net5.0-windows\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\khenz\Desktop\Software Engineering\Fall2021\Api Engineering Cloud Computing\Lab2_AWS_DynamoDB\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp3.1\System.Windows.Extensions.dll
 C:\Users\khenz\Desktop\Software Engineering\Fall2021\Api Engineering Cloud Computing\Lab2_AWS_DynamoDB\obj\Debug\net5.0-windows\AWS_DynamoDB.csproj.CopyComplete
+C:\Users\khenz\Desktop\Software Engineering\Fall2021\Api Engineering Cloud Computing\Lab2_AWS_DynamoDB\obj\Debug\net5.0-windows\EbookReader.g.cs
+C:\Users\khenz\Desktop\Software Engineering\Fall2021\Api Engineering Cloud Computing\Lab2_AWS_DynamoDB\obj\Debug\net5.0-windows\EbookReader.baml

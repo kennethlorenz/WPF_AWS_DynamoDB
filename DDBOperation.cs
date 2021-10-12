@@ -19,6 +19,7 @@ namespace AWS_DynamoDB
         Amazon.Runtime.BasicAWSCredentials credentials;
         string tableName = "Lab2UserTable";
         //Table userTable;
+        public bool userExists;
 
         //constructor
         public DDBOperation (/*string tableName*/)
@@ -192,6 +193,40 @@ namespace AWS_DynamoDB
             }
 
         }
+        public async Task GetUser(string email, string password)
+        {
+            GetItemRequest request = new GetItemRequest()
+            {
+                TableName = tableName,
+                //primary key - should include partition and sort key
+                Key = new Dictionary<string, AttributeValue>
+                {
+                    {"Email", new AttributeValue{S = email} },
+                    {"Password", new AttributeValue{S = password} }
+                }
+            };
 
+            try
+            {
+                var response = await ddbclient.GetItemAsync(request);
+                if(response.HttpStatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    if(response.Item.Count > 0)
+                    {
+                        Debug.WriteLine($"User {email} successfully logged in!");
+                        userExists = true;
+                    }
+                }
+            }
+
+            catch(InternalServerErrorException iee)
+            {
+                Debug.Write($"An error occured on the server side: {iee.Message}");
+            }
+            catch (ResourceNotFoundException rnfe)
+            {
+                Debug.Write($"User doesnt exist: {rnfe.Message}");
+            }
+        }
     }
 }
