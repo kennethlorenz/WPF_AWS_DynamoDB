@@ -23,6 +23,9 @@ namespace AWS_DynamoDB
         public MainWindow()
         {
             InitializeComponent();
+            DDBOperation ddb = new DDBOperation();
+            //ddb.CreateTable();
+            ddb.InsertLoginCredentials();
         }
     }
 }

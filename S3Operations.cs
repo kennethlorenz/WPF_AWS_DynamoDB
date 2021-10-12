@@ -10,11 +10,11 @@ using System.Threading.Tasks;
 
 namespace Lab1_AwsS3_IAM_Service
 {
-    public static class Helper
+    public static class S3Operations
     {
         public static AmazonS3Client s3Client = GetAmazonS3Client();
 
-        private static AmazonS3Client GetAmazonS3Client() {
+        private static AmazonS3Client GetAmazonS3Client() { 
             var builder = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("AppSettings.json");

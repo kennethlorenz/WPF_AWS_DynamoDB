@@ -63,6 +63,10 @@
             "Microsoft.Extensions.Configuration.Json": {
               "target": "Package",
               "version": "[6.0.0-rc.1.21451.13, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[6.0.0-rc.1.21451.13, )"
             }
           },
           "imports": [
