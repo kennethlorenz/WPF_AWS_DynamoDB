@@ -17,6 +17,6 @@ namespace AWS_DynamoDB
         public string Url { get; set; }
         public string Author { get; set; }
         public int BookmarkedPage { get; set; }
-        public string BookMarkTime { get; set; }
+        public string BookMarkedTime { get; set; }
     }
 }
