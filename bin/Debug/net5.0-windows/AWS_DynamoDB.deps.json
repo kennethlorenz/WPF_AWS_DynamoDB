@@ -14,6 +14,7 @@
           "Microsoft.Extensions.Configuration": "6.0.0-rc.1.21451.13",
           "Microsoft.Extensions.Configuration.Binder": "6.0.0-rc.1.21451.13",
           "Microsoft.Extensions.Configuration.Json": "6.0.0-rc.1.21451.13",
+          "Syncfusion.PdfViewer.WPF": "19.3.0.45",
           "System.Configuration.ConfigurationManager": "6.0.0-rc.1.21451.13"
         },
         "runtime": {
@@ -171,6 +172,59 @@
             "assetType": "runtime",
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.21.45113"
+          }
+        }
+      },
+      "Syncfusion.Compression.Base/19.3.0.45": {
+        "runtime": {
+          "lib/net5.0/Syncfusion.Compression.Base.dll": {
+            "assemblyVersion": "19.3500.0.45",
+            "fileVersion": "19.3500.0.45"
+          }
+        }
+      },
+      "Syncfusion.Licensing/19.3.0.45": {
+        "runtime": {
+          "lib/net5.0/Syncfusion.Licensing.dll": {
+            "assemblyVersion": "19.3.0.45",
+            "fileVersion": "19.3.0.45"
+          }
+        }
+      },
+      "Syncfusion.Pdf.Wpf/19.3.0.45": {
+        "dependencies": {
+          "Syncfusion.Compression.Base": "19.3.0.45",
+          "Syncfusion.Licensing": "19.3.0.45"
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/Syncfusion.Pdf.Base.dll": {
+            "assemblyVersion": "19.3500.0.45",
+            "fileVersion": "19.3500.0.45"
+          }
+        }
+      },
+      "Syncfusion.PdfViewer.WPF/19.3.0.45": {
+        "dependencies": {
+          "Syncfusion.Compression.Base": "19.3.0.45",
+          "Syncfusion.Licensing": "19.3.0.45",
+          "Syncfusion.Pdf.Wpf": "19.3.0.45",
+          "Syncfusion.Shared.WPF": "19.3.0.45"
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/Syncfusion.PdfViewer.WPF.dll": {
+            "assemblyVersion": "19.3500.0.45",
+            "fileVersion": "19.3500.0.45"
+          }
+        }
+      },
+      "Syncfusion.Shared.WPF/19.3.0.45": {
+        "dependencies": {
+          "Syncfusion.Licensing": "19.3.0.45"
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/Syncfusion.Shared.WPF.dll": {
+            "assemblyVersion": "19.3500.0.45",
+            "fileVersion": "19.3500.0.45"
           }
         }
       },
@@ -405,6 +459,41 @@
       "sha512": "sha512-eCdNWK22DZ27Qggw2KuHDoRwi7Pj4vsQkGIIvlIKfOXcPvxnmfCwEXzrfNwZEHwQz+194RqHYX2z35x03UTAqQ==",
       "path": "microsoft.win32.systemevents/6.0.0-rc.1.21451.13",
       "hashPath": "microsoft.win32.systemevents.6.0.0-rc.1.21451.13.nupkg.sha512"
+    },
+    "Syncfusion.Compression.Base/19.3.0.45": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-56A2pIv29YYsZ9ohazhpD8ALNlRrIs2ZfqvXJTtqQvCHkIsGj4Wai+D41+x96ERR7LkewdauJtjU5n8cn8oPLg==",
+      "path": "syncfusion.compression.base/19.3.0.45",
+      "hashPath": "syncfusion.compression.base.19.3.0.45.nupkg.sha512"
+    },
+    "Syncfusion.Licensing/19.3.0.45": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1xmsNi9yyUeB71H/hFix5kewNJ+VQp7kRZtV9vlLb6cMpHv5AfTWm3Mm7G+D1pY5KyNlNm8LJbgSjPgSARVD0A==",
+      "path": "syncfusion.licensing/19.3.0.45",
+      "hashPath": "syncfusion.licensing.19.3.0.45.nupkg.sha512"
+    },
+    "Syncfusion.Pdf.Wpf/19.3.0.45": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8Chl10oDa3v0ROaRUHbTLBEamDAU6Ije5gDHfcqjPWaZqNjggf9rEy9JGJ0SQffeS4PymXTT9VHLbfDeQB7fqA==",
+      "path": "syncfusion.pdf.wpf/19.3.0.45",
+      "hashPath": "syncfusion.pdf.wpf.19.3.0.45.nupkg.sha512"
+    },
+    "Syncfusion.PdfViewer.WPF/19.3.0.45": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rS0ZTXmtDMdn9zep3+cku3QF5ZIr4BmozcocHEW2YAsR8KoIrf11pSWyLCZsypDJtbzYTEUCVCZGNdklOO3p5A==",
+      "path": "syncfusion.pdfviewer.wpf/19.3.0.45",
+      "hashPath": "syncfusion.pdfviewer.wpf.19.3.0.45.nupkg.sha512"
+    },
+    "Syncfusion.Shared.WPF/19.3.0.45": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-v83kcd+TMmcltawVbpnl/EYubYbc20jyd3zxdfONcMiVqcxr/9PHlny4J0SiPfZ7++wlL2Qcl+xYfHLnRG6nRA==",
+      "path": "syncfusion.shared.wpf/19.3.0.45",
+      "hashPath": "syncfusion.shared.wpf.19.3.0.45.nupkg.sha512"
     },
     "System.Configuration.ConfigurationManager/6.0.0-rc.1.21451.13": {
       "type": "package",

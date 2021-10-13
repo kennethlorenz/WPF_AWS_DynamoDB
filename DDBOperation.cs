@@ -1,6 +1,8 @@
 ﻿using Amazon.DynamoDBv2;
+using Amazon.DynamoDBv2.DataModel;
 using Amazon.DynamoDBv2.DocumentModel;
 using Amazon.DynamoDBv2.Model;
+using Amazon.Runtime;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
@@ -15,8 +17,8 @@ namespace AWS_DynamoDB
 {
     public class DDBOperation
     {
-        AmazonDynamoDBClient ddbclient;
-        Amazon.Runtime.BasicAWSCredentials credentials;
+        public AmazonDynamoDBClient ddbClient;
+        BasicAWSCredentials credentials;
         string tableName = "Lab2UserTable";
         //Table userTable;
         public bool userExists;
@@ -31,8 +33,8 @@ namespace AWS_DynamoDB
             var accessKeyId = builder.Build().GetSection("AWSCredentials").GetSection("AccesskeyID").Value;
             var secretKey = builder.Build().GetSection("AWSCredentials").GetSection("Secretaccesskey").Value;
 
-            credentials = new Amazon.Runtime.BasicAWSCredentials(accessKeyId, secretKey);
-            ddbclient = new AmazonDynamoDBClient(credentials, Amazon.RegionEndpoint.USEast1);
+            credentials = new BasicAWSCredentials(accessKeyId, secretKey);
+            ddbClient = new AmazonDynamoDBClient(credentials, Amazon.RegionEndpoint.USEast1);
             //userTable = Table.LoadTable(ddbclient, tableName, DynamoDBEntryConversion.V2);
         }
 
@@ -87,7 +89,7 @@ namespace AWS_DynamoDB
 
             try
             {
-                var response = await ddbclient.CreateTableAsync(request);
+                var response = await ddbClient.CreateTableAsync(request);
                 if(response.HttpStatusCode == System.Net.HttpStatusCode.OK)
                 {
                     Debug.WriteLine($"{tableName} table has been successfully created");
@@ -105,7 +107,7 @@ namespace AWS_DynamoDB
 
             catch(ResourceInUseException ree)
             {
-                Debug.WriteLine($"{tableName} already exists.");
+                Debug.WriteLine($"{tableName} already exists. :{ree.Message}");
             }
         }
         public async Task InsertLoginCredentials()
@@ -170,7 +172,7 @@ namespace AWS_DynamoDB
 
             try
             {
-                var response = await ddbclient.BatchWriteItemAsync(batchRequest);
+                var response = await ddbClient.BatchWriteItemAsync(batchRequest);
                 if(response.HttpStatusCode == System.Net.HttpStatusCode.OK)
                 {
                     Debug.WriteLine($"3 Login credentials has been added to table {tableName}");
@@ -208,7 +210,7 @@ namespace AWS_DynamoDB
 
             try
             {
-                var response = await ddbclient.GetItemAsync(request);
+                var response = await ddbClient.GetItemAsync(request);
                 if(response.HttpStatusCode == System.Net.HttpStatusCode.OK)
                 {
                     if(response.Item.Count > 0)

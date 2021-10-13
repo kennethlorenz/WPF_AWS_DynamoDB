@@ -49,3 +49,8 @@ C:\Users\khenz\Desktop\Software Engineering\Fall2021\Api Engineering Cloud Compu
 C:\Users\khenz\Desktop\Software Engineering\Fall2021\Api Engineering Cloud Computing\Lab2_AWS_DynamoDB\obj\Debug\net5.0-windows\AWS_DynamoDB.csproj.CopyComplete
 C:\Users\khenz\Desktop\Software Engineering\Fall2021\Api Engineering Cloud Computing\Lab2_AWS_DynamoDB\obj\Debug\net5.0-windows\EbookReader.g.cs
 C:\Users\khenz\Desktop\Software Engineering\Fall2021\Api Engineering Cloud Computing\Lab2_AWS_DynamoDB\obj\Debug\net5.0-windows\EbookReader.baml
+C:\Users\khenz\Desktop\Software Engineering\Fall2021\Api Engineering Cloud Computing\Lab2_AWS_DynamoDB\bin\Debug\net5.0-windows\Syncfusion.Compression.Base.dll
+C:\Users\khenz\Desktop\Software Engineering\Fall2021\Api Engineering Cloud Computing\Lab2_AWS_DynamoDB\bin\Debug\net5.0-windows\Syncfusion.Licensing.dll
+C:\Users\khenz\Desktop\Software Engineering\Fall2021\Api Engineering Cloud Computing\Lab2_AWS_DynamoDB\bin\Debug\net5.0-windows\Syncfusion.Pdf.Base.dll
+C:\Users\khenz\Desktop\Software Engineering\Fall2021\Api Engineering Cloud Computing\Lab2_AWS_DynamoDB\bin\Debug\net5.0-windows\Syncfusion.PdfViewer.WPF.dll
+C:\Users\khenz\Desktop\Software Engineering\Fall2021\Api Engineering Cloud Computing\Lab2_AWS_DynamoDB\bin\Debug\net5.0-windows\Syncfusion.Shared.WPF.dll

@@ -44,7 +44,7 @@ namespace AWS_DynamoDB
             if (ddb.userExists == true)
             {
                 this.Hide();
-                EbookReader window = new EbookReader(email);
+                EbookReader window = new EbookReader(email, ddb);
                 window.Show();
             }
             else
@@ -52,5 +52,7 @@ namespace AWS_DynamoDB
                 lblValidation.Content = "Invalid Email / Password.";
             }
         }
+
+
     }
 }

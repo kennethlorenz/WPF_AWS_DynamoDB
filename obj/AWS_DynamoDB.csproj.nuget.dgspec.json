@@ -64,6 +64,10 @@
               "target": "Package",
               "version": "[6.0.0-rc.1.21451.13, )"
             },
+            "Syncfusion.PdfViewer.WPF": {
+              "target": "Package",
+              "version": "[19.3.0.45, )"
+            },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
               "version": "[6.0.0-rc.1.21451.13, )"
