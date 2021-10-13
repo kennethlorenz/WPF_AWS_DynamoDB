@@ -11,7 +11,6 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-
 namespace AWS_DynamoDB
 {
     /// <summary>
@@ -19,9 +18,14 @@ namespace AWS_DynamoDB
     /// </summary>
     public partial class ViewBook : Window
     {
-        public ViewBook()
+        string Url;
+        public ViewBook(string url)
         {
             InitializeComponent();
+            ViewModel view = new ViewModel(url);
+
         }
+
+        
     }
 }

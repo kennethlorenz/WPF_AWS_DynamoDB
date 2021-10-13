@@ -22,7 +22,6 @@ namespace AWS_DynamoDB
     {
         DDBOperation ddb = new DDBOperation();
 
-
         public MainWindow()
         {
             InitializeComponent();

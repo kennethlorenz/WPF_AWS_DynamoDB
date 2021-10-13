@@ -11,8 +11,8 @@
         <Rectangle Fill="Beige" HorizontalAlignment="Center" Height="64" Stroke="Black" VerticalAlignment="Top" Width="840"/>
         <Label Content="Hello" HorizontalAlignment="Left" Margin="23,16,0,0" VerticalAlignment="Top" Height="32" Width="54" FontSize="18"/>
         <Label x:Name="lblEmail" Content="" HorizontalAlignment="Left" Margin="82,16,0,0" VerticalAlignment="Top" Height="48" Width="359" FontSize="18" FontWeight="Bold"/>
-        <Button x:Name="btn1Book" Content="" HorizontalAlignment="Center" Margin="0,94,0,0" VerticalAlignment="Top" Height="80" Width="614"/>
-        <Button x:Name="btn2Book" Content="" HorizontalAlignment="Center" Margin="0,205,0,0" VerticalAlignment="Top" Height="80" Width="614"/>
-        <PdfViewer:PdfViewerControl x:Name="pdfViewer" ItemSource="{Binding DocumentStream}"/>
+        <Button x:Name="btn1Book" Content="" HorizontalAlignment="Center" Margin="0,94,0,0" VerticalAlignment="Top" Height="80" Width="614" Click="btn1Book_Click"/>
+        <Button x:Name="btn2Book" Content="" HorizontalAlignment="Center" Margin="0,205,0,0" VerticalAlignment="Top" Height="80" Width="614" Click="btn2Book_Click"/>
     </Grid>
+    
 </Window>

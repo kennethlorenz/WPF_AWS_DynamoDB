@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab1_AwsS3_IAM_Service
+namespace AWS_DynamoDB
 {
     public static class S3Operations
     {

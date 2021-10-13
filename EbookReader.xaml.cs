@@ -88,7 +88,19 @@ namespace AWS_DynamoDB
             btn2Book.Content = myBookShelf[1].Title + "\nAuthor: " + myBookShelf[1].Author;
         }
 
-
+        private void btn2Book_Click(object sender, RoutedEventArgs e)
+        {
+            string url = myBookShelf[1].Url;
+            ViewBook window = new ViewBook(url);
+            window.Show();
         }
+
+        private void btn1Book_Click(object sender, RoutedEventArgs e)
+        {
+            string url = myBookShelf[0].Url;
+            ViewBook window = new ViewBook(url);
+            window.Show();
+        }
+    }
 
 }

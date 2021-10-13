@@ -54,3 +54,5 @@ C:\Users\khenz\Desktop\Software Engineering\Fall2021\Api Engineering Cloud Compu
 C:\Users\khenz\Desktop\Software Engineering\Fall2021\Api Engineering Cloud Computing\Lab2_AWS_DynamoDB\bin\Debug\net5.0-windows\Syncfusion.Pdf.Base.dll
 C:\Users\khenz\Desktop\Software Engineering\Fall2021\Api Engineering Cloud Computing\Lab2_AWS_DynamoDB\bin\Debug\net5.0-windows\Syncfusion.PdfViewer.WPF.dll
 C:\Users\khenz\Desktop\Software Engineering\Fall2021\Api Engineering Cloud Computing\Lab2_AWS_DynamoDB\bin\Debug\net5.0-windows\Syncfusion.Shared.WPF.dll
+C:\Users\khenz\Desktop\Software Engineering\Fall2021\Api Engineering Cloud Computing\Lab2_AWS_DynamoDB\obj\Debug\net5.0-windows\ViewBook.g.cs
+C:\Users\khenz\Desktop\Software Engineering\Fall2021\Api Engineering Cloud Computing\Lab2_AWS_DynamoDB\obj\Debug\net5.0-windows\ViewBook.baml
