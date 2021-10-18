@@ -75,7 +75,6 @@ namespace AWS_DynamoDB
                         myBookShelf.Add(newBookShelf);
                         //Debug.WriteLine($"{myBookShelf[1].Title}");
                         //btn1Book.Content = myBookShelf[0].Title;
-
                     }
                 } while (!search.IsDone);
             }
@@ -84,8 +83,11 @@ namespace AWS_DynamoDB
                 Debug.WriteLine($"{e.Message}");
             }
 
-            btn1Book.Content = myBookShelf[0].Title + "\nAuthor: " + myBookShelf[0].Author;
-            btn2Book.Content = myBookShelf[1].Title + "\nAuthor: " + myBookShelf[1].Author;
+            foreach (Bookshelf book in myBookShelf)
+            {
+                lstBxBooks.Items.Add($"{book.Title} by: {book.Author}");
+            }
+            //btn1Book.Content = myBookShelf[0].Title + "\nAuthor: " + myBookShelf[0].Author;
         }
 
         private void btn2Book_Click(object sender, RoutedEventArgs e)
