@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Amazon.S3.Model;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,11 +20,19 @@ namespace AWS_DynamoDB
     /// </summary>
     public partial class ViewBook : Window
     {
-        string Url;
+        string bucketName = "lab2comp306bucket";
         public ViewBook(string key)
         {
             InitializeComponent();
-            
+            GetObjectRequest req = new GetObjectRequest();
+            req.BucketName = bucketName;
+            req.Key = key;
+            GetObjectResponse response = S3Operations.s3Client.GetObjectAsync(req).Result;
+
+            MemoryStream docStream = new MemoryStream();
+            response.ResponseStream.CopyTo(docStream);
+
+            pdfViewer.ItemSource = docStream;
         }
 
         

@@ -85,21 +85,16 @@ namespace AWS_DynamoDB
 
             foreach (Bookshelf book in myBookShelf)
             {
-                lstBxBooks.Items.Add($"{book.Title} by: {book.Author}");
+                BookShelfItem shelfItem = new BookShelfItem(book.Title, book.Author, book.Key);
+                lstBxBooks.Items.Add(new ListBoxItem() { Content = book.Title + " Author: " + book.Author, Tag = book.Key});
             }
-            //btn1Book.Content = myBookShelf[0].Title + "\nAuthor: " + myBookShelf[0].Author;
         }
 
-        private void btn2Book_Click(object sender, RoutedEventArgs e)
+        private void btnViewBook_Click(object sender, RoutedEventArgs e)
         {
-            string key = myBookShelf[1].Key;
-            ViewBook window = new ViewBook(key);
-            window.Show();
-        }
+            string key = ((ListBoxItem)lstBxBooks.SelectedItem).Tag.ToString();
+            Debug.WriteLine(key);
 
-        private void btn1Book_Click(object sender, RoutedEventArgs e)
-        {
-            string key = myBookShelf[0].Key;
             ViewBook window = new ViewBook(key);
             window.Show();
         }

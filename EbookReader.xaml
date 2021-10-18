@@ -11,7 +11,8 @@
         <Rectangle Fill="Beige" HorizontalAlignment="Center" Height="64" Stroke="Black" VerticalAlignment="Top" Width="840"/>
         <Label Content="Hello" HorizontalAlignment="Left" Margin="23,16,0,0" VerticalAlignment="Top" Height="32" Width="54" FontSize="18"/>
         <Label x:Name="lblEmail" Content="" HorizontalAlignment="Left" Margin="82,16,0,0" VerticalAlignment="Top" Height="48" Width="359" FontSize="18" FontWeight="Bold"/>
-        <ListBox x:Name="lstBxBooks" Margin="23,97,303,32"/>
+        <ListBox x:Name="lstBxBooks" Margin="23,97,255,35"/>
+        <Button x:Name="btnViewBook" Content="View Book" HorizontalAlignment="Left" Margin="604,166,0,0" VerticalAlignment="Top" Height="71" Width="162" Click="btnViewBook_Click"/>
     </Grid>
 
 </Window>
