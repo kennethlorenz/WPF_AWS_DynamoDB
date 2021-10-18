@@ -67,7 +67,7 @@ namespace AWS_DynamoDB
                         Bookshelf newBookShelf = new Bookshelf(
                             books["Email"],
                             books["BookTitle"],
-                            books["Url"],
+                            books["Key"],
                             books["Author"],
                             books["BookmarkedPage"],
                             books["BookmarkedTime"]);
@@ -90,15 +90,15 @@ namespace AWS_DynamoDB
 
         private void btn2Book_Click(object sender, RoutedEventArgs e)
         {
-            string url = myBookShelf[1].Url;
-            ViewBook window = new ViewBook(url);
+            string key = myBookShelf[1].Key;
+            ViewBook window = new ViewBook(key);
             window.Show();
         }
 
         private void btn1Book_Click(object sender, RoutedEventArgs e)
         {
-            string url = myBookShelf[0].Url;
-            ViewBook window = new ViewBook(url);
+            string key = myBookShelf[0].Key;
+            ViewBook window = new ViewBook(key);
             window.Show();
         }
     }

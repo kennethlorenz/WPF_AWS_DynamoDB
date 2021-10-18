@@ -15,7 +15,7 @@ namespace AWS_DynamoDB
         public string Email { get; set; }
 
         public string Title { get; set; }
-        public string Url { get; set; }
+        public string Key { get; set; }
         public string Author { get; set; }
         public DynamoDBEntry BookmarkedPage { get; set; }
         public string BookMarkedTime { get; set; }
@@ -25,11 +25,11 @@ namespace AWS_DynamoDB
             throw new NotImplementedException();
         }
 
-        public Bookshelf(string email, string title, string url, string author, DynamoDBEntry bookmarkedPage, string bookmarkedTime)
+        public Bookshelf(string email, string title, string key, string author, DynamoDBEntry bookmarkedPage, string bookmarkedTime)
         {
             this.Email = email;
             this.Title = title;
-            this.Url = url;
+            this.Key = key;
             this.Author = author;
             this.BookmarkedPage = bookmarkedPage;
             this.BookMarkedTime = bookmarkedTime;

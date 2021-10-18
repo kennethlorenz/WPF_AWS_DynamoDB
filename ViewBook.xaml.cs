@@ -19,7 +19,7 @@ namespace AWS_DynamoDB
     public partial class ViewBook : Window
     {
         string Url;
-        public ViewBook(string url)
+        public ViewBook(string key)
         {
             InitializeComponent();
             
