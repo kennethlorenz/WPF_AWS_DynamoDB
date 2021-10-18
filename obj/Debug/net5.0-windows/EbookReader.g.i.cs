@@ -78,7 +78,7 @@ namespace AWS_DynamoDB {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/AWS_DynamoDB;component/ebookreader.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/AWS_DynamoDB;V1.0.0.0;component/ebookreader.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\EbookReader.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

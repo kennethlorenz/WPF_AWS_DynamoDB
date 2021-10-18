@@ -22,8 +22,7 @@ namespace AWS_DynamoDB
         public ViewBook(string url)
         {
             InitializeComponent();
-            ViewModel view = new ViewModel(url);
-
+            
         }
 
         

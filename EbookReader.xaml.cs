@@ -32,7 +32,7 @@ namespace AWS_DynamoDB
         public static List<Bookshelf> shelfList;
         Amazon.DynamoDBv2.DocumentModel.Table bookShelfTable;
         private static List<Document> bookShelfSetQuery = new List<Document>();
-        public static List<Bookshelf> myBookShelf = new List<Bookshelf>();
+        public static ObservableCollection<Bookshelf> myBookShelf = new ObservableCollection<Bookshelf>();
         public static string tableName = "Bookshelf";
         public EbookReader(string email, DDBOperation ddb)
         {
