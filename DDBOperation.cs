@@ -20,11 +20,11 @@ namespace AWS_DynamoDB
         public AmazonDynamoDBClient ddbClient;
         BasicAWSCredentials credentials;
         string tableName = "Lab2UserTable";
-        //Table userTable;
+        public Table table;
         public bool userExists;
 
         //constructor
-        public DDBOperation (/*string tableName*/)
+        public DDBOperation (string tableName)
         {
             var builder = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
@@ -35,7 +35,7 @@ namespace AWS_DynamoDB
 
             credentials = new BasicAWSCredentials(accessKeyId, secretKey);
             ddbClient = new AmazonDynamoDBClient(credentials, Amazon.RegionEndpoint.USEast1);
-            //userTable = Table.LoadTable(ddbclient, tableName, DynamoDBEntryConversion.V2);
+            table = Table.LoadTable(ddbClient, tableName, DynamoDBEntryConversion.V2);
         }
 
 

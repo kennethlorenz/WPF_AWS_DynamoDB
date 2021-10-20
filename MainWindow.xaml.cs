@@ -20,7 +20,7 @@ namespace AWS_DynamoDB
     /// </summary>
     public partial class MainWindow : Window
     {
-        DDBOperation ddb = new DDBOperation();
+        DDBOperation ddb = new DDBOperation("Lab2UserTable");
 
         public MainWindow()
         {
@@ -43,7 +43,7 @@ namespace AWS_DynamoDB
             if (ddb.userExists == true)
             {
                 this.Hide();
-                EbookReader window = new EbookReader(email, ddb);
+                EbookReader window = new EbookReader(email);
                 window.Show();
             }
             else

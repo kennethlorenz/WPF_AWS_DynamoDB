@@ -14,25 +14,28 @@ namespace AWS_DynamoDB
         [DynamoDBHashKey]
         public string Email { get; set; }
 
+        [DynamoDBRangeKey("BookTitle")]
         public string Title { get; set; }
         public string Key { get; set; }
         public string Author { get; set; }
-        public DynamoDBEntry BookmarkedPage { get; set; }
-        public string BookMarkedTime { get; set; }
+        public int BookmarkedPage { get; set; }
+        public string BookmarkedTime { get; set; }
 
         public static implicit operator Bookshelf(List<Document> v)
         {
             throw new NotImplementedException();
         }
 
-        public Bookshelf(string email, string title, string key, string author, DynamoDBEntry bookmarkedPage, string bookmarkedTime)
+        public Bookshelf(string email, string title, string key, string author, int bookmarkedPage, string bookmarkedTime)
         {
             this.Email = email;
             this.Title = title;
             this.Key = key;
             this.Author = author;
             this.BookmarkedPage = bookmarkedPage;
-            this.BookMarkedTime = bookmarkedTime;
+            this.BookmarkedTime = bookmarkedTime;
         }
+
+        public Bookshelf() { }
     }
 }
